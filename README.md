@@ -24,27 +24,27 @@ We will implement a static instance of our custom class NotificationManager, whi
 
 ![alt text](https://github.com/cs100/final-project-aghad003-dhoch002-fbust002/blob/master/CS100%20Final%20Project%20OMT%20Diagram.png?raw=true)
 
+## Screenshots 
  
- > ## Phase III
- > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
- > * Before the meeting you should perform a sprint plan like you did in Phase II
- > * In the meeting with your TA you will discuss: 
- >   - How effective your last sprint was (each member should talk about what they did)
- >   - Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- >   - Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- >   - What tasks you are planning for this next sprint.
+<img src="https://cdn.discordapp.com/attachments/811058864295510016/818929360329244732/IMG_6455.jpeg" width="300" height="650">
 
- > ## Final deliverable
- > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board. 
- 
- ## Screenshots
- > Screenshots of the input/output after running your application
- 
+<img src="https://cdn.discordapp.com/attachments/796852533041299529/819298546830147688/IMG_6461.jpeg" width="300" height="650">
+
+<img src="https://cdn.discordapp.com/attachments/796852533041299529/819298551795679262/IMG_6460.jpeg" width="300" height="650">
+
+<img src="https://cdn.discordapp.com/attachments/811058864295510016/818929365567930408/IMG_6456.jpeg" width="300" height="650">
+
+<img src="https://cdn.discordapp.com/attachments/811058864295510016/818929371502215178/IMG_6457.jpeg" width="300" height="650">
+
+<img src="https://cdn.discordapp.com/attachments/811058864295510016/818929389877329920/IMG_6458.jpeg" width="300" height="650">
+
+<img src="https://cdn.discordapp.com/attachments/811058864295510016/818929402103857192/IMG_6459.jpeg" width="300" height="650">
+
+<img src="https://cdn.discordapp.com/attachments/796852533041299529/819385625936396288/IMG_6493.jpeg" width="300" height="650">
+
  ## Installation/Usage
- > Instructions on installing and running your application
+Install this app by cloning the repository and opening it in Xcode. Then build and run the app either on an iPhone simulator in Xcode or on your iPhone by connecting your phone via an iPhone cable to your computer. The app will take a minute or less to download. From there you can use the app. If the program does not compile, it means that your local device is not compatible with the Realm dependency. To fix this, quit Xcode and change directories to the project in your terminal. Type in 'pod update' to make sure your CocoaPods are up to date. Now open Xcode again and the app should compile and run.
+
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+Our project was tested and validated via a test suite of unit tests in Xcode using XCTest. Our test suite included multiple tests for each type of function in our program. For functions that took in either integers, strings, or objects; we tested those functions with both valid and invalid input to verify that our functions will give expected output and will not crash at runtime. We tested our strategy function to validate user input by unit testing our different strategies. Our ValidationStrategy validated either string, URL, time, or day input, all of which is validated differently. We tested our function to determine if a URL is valid or not, which was used in our ValidationStrategy class. We used integers to represent values such as the time of the day (ex: 5:00 pm), and tested functions which would convert the integer to its string representation. To schedule a notification, we used a meeting's start time to create time components for a timer trigger in our NotificationManager Singleton class. We tested this function to ensure our notifications fire at the expected time. 
  
